@@ -1,2 +1,0 @@
-# tristanblc.github.io
-Portfolio
