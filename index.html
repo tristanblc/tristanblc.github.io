@@ -19,6 +19,9 @@
 	<link rel="stylesheet" href="assets/css/timeline.css">
 	<script src="assets/js/bar.js"></script>
 
+
+
+
 	<script src="assets/js/jquery.min.js"></script>
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
@@ -40,6 +43,7 @@
 							<li><a href="#intro" class="active">Présentation</a></li>
 							<li><a href="#first">Compétences</a></li>
 							<li><a href="#second">Expériences</a></li>
+							<li><a href="#projets">Projets</a></li>
 							<li><a href="#cta">Contact</a></li>
 						</ul>
 					</nav>
@@ -220,6 +224,108 @@
 								 
 							  </div>
 							</section>
+
+							<section id="projets" class="main special">
+								<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+								<script>
+									
+								</script>
+								<header class="major">
+									<h2>Projets</h2>
+									<br>
+									<p class="timeline-font-size" style="margin: 0;">Liste de mes projets : </p>	
+									<section class="center">
+										<div class="table__wrapper">
+										  <table class="table" summary="This is a summary of your rad table contents.">
+											<thead>
+											  <tr>
+												<th scope="row">Nom du projet</th>
+											
+												<th scope="col">Description :</th>
+												<th scope="col">Langage:</th>
+												<th scope="col">Date de dernière mise à jour :</th>
+												<th scope="col">Voir:</th>
+											  </tr>
+											</thead>
+											<tbody id="tbody">
+											 
+											   <script>
+												var resultat = [];
+												$.ajax({
+													url: "https://api.github.com/users/tristanblc/repos",
+													jsonp: true,
+													method: "GET",
+													dataType: "json",
+													success: function(res) {
+                                                       console.log(res.length)
+														resultat.push(res)
+														for(var i = 0;i < res.length;i++){
+															const json = JSON.parse(JSON.stringify(res[i]))
+													        console.log(json)
+															$('#tbody').append(`<tr id="${json.name}"  scope="col" >
+																
+																<th >
+																<p>${json.name}</p>
+																</th>
+																 <th class="text-center">
+																   <p>${json.description}</p>
+																   </th>
+																   <th class="text-center">
+																	<p >${json.language}</p>
+																	</th>
+																   <th class="text-center">
+																	<p>${ new Date(json.updated_at).toLocaleDateString("fr-FR")}</p>
+																	</th>
+																   <th>
+																
+																   <a href="${json.html_url}" class="icon brands fa-github alt"><span class="label">GitHub</span></a>
+																     
+																</th>
+																 </tr>`);
+														
+
+														}
+														
+														
+													 
+													}
+												  });
+
+											   </script>
+											  </tr>
+											 
+											</tbody>
+										  </table>
+										</div>
+									  </section>						
+									
+								
+								</header>
+								
+							</section>
+							<script src=
+"https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+  </script>
+  <script src=
+"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js">
+  </script>
+  <script src=
+"https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js">
+  </script>
+  
+  <script>
+    $(document).ready(function () {
+  
+      // Denotes total number of rows
+      var rowIdx = 0;
+  
+      // jQuery button click event to add a row
+      $('#addBtn').on('click', function () {
+  
+        // Adding a row inside the tbody.
+      
+      });
+	</script>
 						
 
 						<!-- Get Started -->
@@ -263,6 +369,8 @@
 					bg : "#008080"
 				});
 			});</script>
+
+			
 
 	</body>
 </html>
