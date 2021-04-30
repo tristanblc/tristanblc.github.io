@@ -40,6 +40,51 @@ h1 {
     -o-transition: .5s ease;
     transition: .5s .15s ease;
   }
+  @media screen and (max-width: 600px) {
+    .wrap {
+      position: relative;
+      width: 300px;
+      height: 30px;
+      margin: 25px auto;
+      padding: 0;
+      background: #444;
+      border-radius: 5px;
+      -webkit-transition: .5s ease;
+      -moz-transition: .5s ease;
+      -o-transition: .5s ease;
+      transition: .5s .15s ease;
+    }
+  }
+  @media screen and (max-width: 300px) {
+    .wrap {
+      position: relative;
+      width: 300px;
+      height: 30px;
+      margin: 25px auto;
+      padding: 0;
+      background: #444;
+      border-radius: 5px;
+      -webkit-transition: .5s ease;
+      -moz-transition: .5s ease;
+      -o-transition: .5s ease;
+      transition: .5s .15s ease;
+    }
+  }
+  @media screen and (max-width: 200px) {
+    .wrap {
+      position: relative;
+      width: 150px;
+      height: 30px;
+      margin: 25px auto;
+      padding: 0;
+      background: #444;
+      border-radius: 5px;
+      -webkit-transition: .5s ease;
+      -moz-transition: .5s ease;
+      -o-transition: .5s ease;
+      transition: .5s .15s ease;
+    }
+  }
   
   .bar {
     height: 30px;
@@ -238,3 +283,5 @@ h1 {
     from { opacity: 0; }
     to   { opacity: 1; }
   }
+
+ 
