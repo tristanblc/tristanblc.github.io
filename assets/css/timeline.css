@@ -101,7 +101,8 @@
     font-size: 20px;
  
     font-weight: 500; }
-  
+ 
+    
   .timeline-centered .timeline-entry .timeline-entry-inner .timeline-label h2 a {
     color: #000; }
   
@@ -119,3 +120,13 @@
     padding-top:-20px;
     
     }
+    @media screen and (max-width: 400px) {
+
+      .timeline-font-size{
+        font-size: 12px;
+        text-align: left;
+        padding-top:-20px;
+        
+        }
+
+		}

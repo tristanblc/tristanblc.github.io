@@ -56,30 +56,8 @@ table {
     margin-bottom : 25px; 
 	margin-left: 25px;
 }
-@media screen and (max-width: 400px) {
 
-	.bouton{
-		display: block;
-		margin-bottom : 25px; 
-		margin-left: 25px;
-		width: 100px;
-		height: 100px;
-		text-align: center;
-	}
 
-}
-@media screen and (max-width: 300px) {
-
-	.bouton{
-		display: block;
-		margin-bottom : 25px; 
-		margin-left: 25px;
-		width: 50px;
-		height: 50px;
-		text-align: center;
-	}
-
-}
 
 body {
 	-webkit-text-size-adjust: none;
@@ -165,6 +143,7 @@ input, select, textarea {
 		font-weight: 300;
 		line-height: 1.65;
 	}
+	
 
 		@media screen and (max-width: 1680px) {
 
@@ -185,7 +164,7 @@ input, select, textarea {
 		@media screen and (max-width: 360px) {
 
 			body, input, select, textarea {
-				font-size: 11pt;
+				font-size: 8pt;
 			}
 
 		}

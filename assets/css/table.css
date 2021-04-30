@@ -24,6 +24,62 @@
       max-width: 50%;
     }
   }
+  @media screen and (max-width: 300px) {
+    * {
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size:10px;
+    }
+    .table__wrapper {
+      width: 25%;
+    }
+    .table__wrapper .table {
+      width: 25%;
+      max-width: 25%;
+    }
+  }
+  @media screen and (max-width: 300px) {
+    * {
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size:10px;
+    }
+    .table__wrapper {
+      width: 25%;
+    }
+    .table__wrapper .table {
+      width: 25%;
+      max-width: 25%;
+    }
+  }
+   @media screen and (max-width: 300px) {
+    * {
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size:5px;
+    }
+    .table__wrapper {
+      width: 200px;
+    }
+    .table__wrapper .table {
+      width:200px;
+      max-width: 200px;
+    }
+  }
+  @media screen and (max-width: 200px) {
+    * {
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size:2px;
+    }
+    .table__wrapper {
+      width: 150px;
+    }
+    .table__wrapper .table {
+      width: 150px;
+      max-width: 150px;
+    }
+  }
   
 
   /* ------- Presentational Formatting --------- */

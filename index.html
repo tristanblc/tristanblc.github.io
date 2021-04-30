@@ -63,10 +63,10 @@
 										<div class="back">
 											<br>
 											<h2 style="margin-left: 25px;">N'hésitez pas à jeter un coup d'oeil sur mon CV ! 🧐</h2>
-										<ul class="actions">
+									
 											
 											<a href="assets/documents/cv blanc tristan.pdf" class="button" style="background-color: white;">Télécharger mon CV</a>
-										</ul>
+								
 								
 											
 										</div>
@@ -237,12 +237,24 @@
 										<div class="table__wrapper">
 										  <table class="table" summary="This is a summary of your rad table contents.">
 											<thead>
-											  <tr>
+											  <tr id ="thead">
 												<th scope="row">Nom du projet</th>
+												<script>
+												
+													if(window.screen.availWidth > 450){
+													$('#thead').append(`
+													<th scope="col">Description:</th>
+													<th scope="col">Langage:</th>
+													<th scope="col">Date de dernière mise à jour :</th>
+																
+														`);
+												
+												}
+												</script>
+
+												
 											
-												<th scope="col">Description :</th>
-												<th scope="col">Langage:</th>
-												<th scope="col">Date de dernière mise à jour :</th>
+												
 												<th scope="col">Voir:</th>
 											  </tr>
 											</thead>
@@ -257,31 +269,47 @@
 													dataType: "json",
 													success: function(res) {
                                                        console.log(res.length)
-														resultat.push(res)
+												
 														for(var i = 0;i < res.length;i++){
 															const json = JSON.parse(JSON.stringify(res[i]))
-													        console.log(json)
-															$('#tbody').append(`<tr id="${json.name}"  scope="col" >
+													     
+															if(window.screen.availWidth < 450){
+																$('#tbody').append(`<tr id="${json.name}"  scope="col" >
 																
-																<th >
-																<p>${json.name}</p>
-																</th>
-																 <th class="text-center">
-																   <p>${json.description}</p>
-																   </th>
-																   <th class="text-center">
-																	<p >${json.language}</p>
+																	<th >
+																	<p>${json.name}</p>
 																	</th>
-																   <th class="text-center">
-																	<p>${ new Date(json.updated_at).toLocaleDateString("fr-FR")}</p>
+																	<th>
+																	   <a href="${json.html_url}" class="icon brands fa-github alt"><span class="label">GitHub</span></a>
+																		 
 																	</th>
-																   <th>
+																	 </tr>`);
+															
+															}
+															else{
+																$('#tbody').append(`<tr id="${json.name}"  scope="col" >
 																
-																   <a href="${json.html_url}" class="icon brands fa-github alt"><span class="label">GitHub</span></a>
-																     
-																</th>
-																 </tr>`);
-														
+																	<th >
+																	<p>${json.name}</p>
+																	</th>
+																	 <th class="text-center">
+																	   <p>${json.description}</p>
+																	   </th>
+																	   <th class="text-center">
+																		<p >${json.language}</p>
+																		</th>
+																	   <th class="text-center">
+																		<p>${ new Date(json.updated_at).toLocaleDateString("fr-FR")}</p>
+																		</th>
+																	   <th>
+																	
+																	   <a href="${json.html_url}" class="icon brands fa-github alt"><span class="label">GitHub</span></a>
+																		 
+																	</th>
+																	 </tr>`);
+															
+															}
+															
 
 														}
 														
