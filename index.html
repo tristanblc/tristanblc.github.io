@@ -353,6 +353,25 @@
 										<li><a href="https://github.com/tristanblc" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
 										
 									</ul>
+									<ul class="icons">
+										<textarea id="mysubject">
+											Lorem ipsum...
+										</textarea>
+										<textarea id="myText">
+											Lorem ipsum...
+										</textarea>
+										<button onclick="sendMail(); return false">Send</button>
+									</ul>
+									<script>
+										function sendMail() {
+											var link = "mailto:tblanc.sio@gmail.com"
+													 + "&subject=" + encodeURIComponent(document.getElementById('mysubject').value)
+													 + "&body=" + encodeURIComponent(document.getElementById('myText').value)
+											;
+											
+											window.location.href = link;
+										}
+									</script>
 								
 							
 								
