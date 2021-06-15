@@ -34,7 +34,9 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
 }
-
+html{
+	background: white url("../images/fond.png") no-repeat right bottom;
+	}
 ol, ul {
 	list-style: none;
 }
