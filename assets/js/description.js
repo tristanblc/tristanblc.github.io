@@ -94,7 +94,7 @@ function description_gsb(){
         
         "Création d'un logiciel de gestion des ressources médicales (medecin,medicament,etc)"+
         "<br>Technologies : C# et lien avec la base de données - SQL",
-        imageUrl: 'assets/images/gsb.png',
+        imageUrl: 'assets/images/gsb.jpg',
         imageWidth: 400,
         imageHeight: 200,
         imageAlt: 'site',
