@@ -49,18 +49,10 @@
   color: #3d3d3d;
   margin-bottom: 1rem;
 }
-a {
-  display: block;
-  width: 50%;
-  font-size: 0.8rem;
-  text-align: center;
 
-  border: none;
-  border-radius: 0.4rem;
-  transition: 0.2s;
-  cursor: pointer;
+a:hover{
+  color: #3d3d3d;
 }
-
 .card__btn {
   display: block;
   width: 50%;
