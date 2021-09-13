@@ -49,7 +49,7 @@ function description_Api(){
         
         "Création d'un site avec une api pour une bibliothèque"+
         "<br>Technologies : PHP, Symfony et API REST, Api Platform",
-        imageUrl: 'assets/images/api.png',
+        imageUrl: 'assets/images/api.jpg',
         imageWidth: 400,
         imageHeight: 200,
         imageAlt: 'site',
