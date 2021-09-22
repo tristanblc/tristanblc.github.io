@@ -6,7 +6,7 @@ function description(){
         "Développement d'un outil de gestion de droit pour l'utilisation des différentes permissions et différents logiciels"+
         "<br>Technologies: Symfony - MariaDB -Composer/NPM/Webpack - Boostrap"  
         ,
-        imageUrl: 'assets/images/CaptureCors.png',
+        imageUrl: 'assets/images/CaptureCors.jpg',
         imageWidth: 400,
         imageHeight: 200,
         imageAlt: 'site',
@@ -55,6 +55,20 @@ function description_Api(){
         imageAlt: 'site',
         cancelButtonText:'Fermer',
       })
+}
+function description_Api_messagerie(){
+  Swal.fire({
+      title: 'Projet api en Symfony',
+      html:"Sujet : <br> "+
+      
+      "Création d'un site avec une api pour une messagerie instantanée"+
+      "<br>Technologies : PHP, Symfony et API REST, Api Platform",
+      imageUrl: 'assets/images/api.jpg',
+      imageWidth: 400,
+      imageHeight: 200,
+      imageAlt: 'site',
+      cancelButtonText:'Fermer',
+    })
 }
 function description_enquete_auto(){
     Swal.fire({
