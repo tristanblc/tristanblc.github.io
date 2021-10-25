@@ -224,17 +224,18 @@
 												method: "GET",
 												dataType: "json",
 												success: function(res) {
+													
 												   
 											
 													for(var i = 0;i < res.length;i++){
 														const json = JSON.parse(JSON.stringify(res[i]))
-														console.log(json)
+												
 														$('#grid').append('<div class="grid__item"><div class="card"><img class="card__img" style="margin-left:35px" src="/assets/images/projets.jpg"><div class="card__content"><h1 class="card__header">'+json.name+'</h1><p class="card__text">'+json.description+'</p><button style="margin-right:150px;">             <a class="card__btn icon brands fa-github" href = "'+json.svn_url+'" style="font-size:13px; text-align:center;">  Voir</a></button></div></div>  </div>'); 
 														
 														}
 														
 
-													
+														$('#grid').append('<div class="grid__item"><div class="card"><img class="card__img" style="margin-left:35px" src="/assets/images/projets.jpg"><div class="card__content"><h1 class="card__header"> 5 autres repertoires privées   </h1>     </div></div>  </div>'); 
 													
 													
 												 
@@ -315,6 +316,16 @@
 												<h1 class="card__header">Projet Personnel</h1>
 												<p class="card__text">Projet Symfony Api </p>
 												<button class="card__btn"  onclick="description_Api()">En savoir plus</button>
+										  
+											  </div>
+											</div>
+										</div>
+										<div class="grid__item">
+											<div class="card"><img class="card__img" style="margin-left:35px" src="/assets/images/projets.jpg">
+											  <div class="card__content">
+												<h1 class="card__header">Projet Personnel</h1>
+												<p class="card__text">Projet Symfony Api - Messagerie </p>
+												<button class="card__btn"  onclick="description_Api_messagerie()">En savoir plus</button>
 										  
 											  </div>
 											</div>
