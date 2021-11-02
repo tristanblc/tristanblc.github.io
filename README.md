@@ -1,5 +1,5 @@
 # tristanblc.github.io
-Portfolio de tristan Blanc 
+Portfolio de Tristan Blanc 
 
 Crédit: 
 
