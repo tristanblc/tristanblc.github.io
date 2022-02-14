@@ -18,6 +18,17 @@
 	<link rel="stylesheet" href="assets/css/bar.css">
 	<link rel="stylesheet" href="assets/css/timeline.css">
 	<link rel="stylesheet" href="assets/css/card.css">
+	<!-- Include the library. -->
+<script
+src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js">
+</script>
+
+<!-- Optionally, include the theme (if you don't want to struggle to write the CSS) -->
+<link
+rel="stylesheet"
+href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
+/>
+
 
 	<link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
@@ -49,6 +60,7 @@
 							<li><a href="#intro" class="active">Présentation</a></li>
 							<li><a href="#first">Compétences</a></li>
 							<li><a href="#second">Diplome</a></li>
+							<li><a href="#git">Github</a></li>
 							<li><a href="#projets">Projets</a></li>
 							<li><a href="#cta">Contact</a></li>
 						</ul>
@@ -205,6 +217,33 @@
 								 
 							  </div>
 							</section>
+
+						<!-- Introduction -->
+						<section id="git" class="main special">
+							<div class="spotlight">
+								<div class="content"  id="gride">
+									<header class="major">
+										<h2>Github</h2>
+									</header>
+									
+<!-- Prepare a container for your calendar. -->
+<div class="calendar">
+	<!-- Loading stuff -->
+	Loading the data just for you.
+  </div>
+  
+  <script>
+
+	GitHubCalendar(".calendar", "tristanblc", { responsive: true });
+  
+
+  </script>
+ 
+									
+								</div>
+							
+							</div>
+						</section>
 						<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 								<script>
 									
