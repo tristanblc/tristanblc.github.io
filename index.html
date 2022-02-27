@@ -18,6 +18,8 @@
 	<link rel="stylesheet" href="assets/css/bar.css">
 	<link rel="stylesheet" href="assets/css/timeline.css">
 	<link rel="stylesheet" href="assets/css/card.css">
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+	
 	<!-- Include the library. -->
 <script
 src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js">
@@ -253,6 +255,7 @@ href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.c
 									<h2>Projets</h2>
 									<br>
 								<header></header>
+								
 									<!-- Normal Demo-->
 									<div class="grid" id="grid">
 										<script>
@@ -369,10 +372,19 @@ href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.c
 											  </div>
 											</div>
 										</div>
-										
-									  </section>						
 									
-								
+										  </div>
+									
+										  <script>
+
+$('#grid').easyPaginate({
+    paginateElement: 'img',
+    elementsPerPage: 3,
+    effect: 'climb'
+});
+											  </script>
+										  
+									  </section>						
 							
 							<script src=
 "https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
