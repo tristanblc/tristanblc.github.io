@@ -384,33 +384,7 @@ href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.c
 										  </script>
 										  
 									  </section>
-									  <script>
-										var resultat = [];
-										$.ajax({
-											url: "https://api.github.com/users/tristanblc/repos",
-											method: "GET",
-											dataType: "json",
-											success: function(res) {
-												
-											   
-										
-												for(var i = 0;i < res.length;i++){
-													const json = JSON.parse(JSON.stringify(res[i]))
-											
-													$('#test').append('<div class="grid__item"><div class="card"><img class="card__img" style="margin-left:35px" src="/assets/images/projets.jpg"><div class="card__content"><h1 class="card__header">'+json.name+'</h1><p class="card__text">'+json.description+'</p><button style="margin-right:150px;">             <a class="card__btn icon brands fa-github" href = "'+json.svn_url+'" style="font-size:13px; text-align:center;">  Voir</a></button></div></div></div>'); 
-													
-												
-													
-
-
-												
-												
-											 
-											}
-											}
-										  });
-
-									   </script>						
+									  						
 							
 							<script src=
 "https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
