@@ -269,9 +269,9 @@ href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.c
 								<header></header>
 								
 									<!-- Normal Demo-->
-									<div  id="grid">
+									<div id="grid">
 										
-										<div class="slick" id="test" >
+										<div id="test" >
 									
 										
 									
@@ -296,6 +296,15 @@ href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.c
 											</div>
 										  </div>
 										</div>
+										<div class="grid__item">
+											<div class="card"><img class="card__img"style="margin-left:35px" src="/assets/images/projets.jpg">
+											  <div class="card__content">
+												<h1 class="card__header">Stage au CROUS Clermont Auvergne</h1>
+												<p class="card__text">Outil de gestion de droits</p>
+												<button class="card__btn" onclick="description()">En savoir plus</button>
+											  </div>
+											</div>
+										  </div>
 										<div class="grid__item">
 											<div class="card"><img class="card__img" style="margin-left:35px" src="/assets/images/projets.jpg">
 											  <div class="card__content">
@@ -354,37 +363,76 @@ href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.c
 										</div>
 									
 										  </div>
+
 									
-										  <script>
-											$(document).ready(function () {
-											  $('.slick').slick({
-												slidesToShow: 3,
-												slidesToScroll: 3,
-												arrows: false,
-												autoplay: true,
-										  
-												responsive: [
-												  {
-													breakpoint: 900,
-													settings: {
-													  slidesToShow: 2,
-													  slidesToScroll: 2
+										   <script>
+										
+										$(document).ready(function () {
+
+											var resultat = [];
+											$.ajax({
+												url: "https://api.github.com/users/tristanblc/repos",
+												method: "GET",
+												dataType: "json",
+												success: function(res) {
+													
+												   
+											
+													for(var i = 0;i < res.length;i++){
+														const json = JSON.parse(JSON.stringify(res[i]))
+												
+														$('#test').append('<div class="grid__item"><div class="card"><img class="card__img" style="margin-left:35px" src="/assets/images/projets.jpg"><div class="card__content"><h1 class="card__header">'+json.name+'</h1><p class="card__text">'+json.description+'</p><button style="margin-right:150px;">             <a class="card__btn icon brands fa-github" href = "'+json.svn_url+'" style="font-size:13px; text-align:center;">  Voir</a></button></div></div></div>'); 
+														
+													
+														
+	
+	
+													
+													
+												 
+												}
+												$('#test').addClass("slick");
+												 
+												$('.slick').slick({
+												  slidesToShow: 3,
+												  slidesToScroll: 3,
+												  arrows: true,
+												  autoplay: true,
+											
+												  responsive: [
+													{
+													  breakpoint: 900,
+													  settings: {
+														slidesToShow: 2,
+														slidesToScroll: 2
+													  }
+													},
+													{
+													  breakpoint: 600,
+													  settings: {
+														slidesToShow: 1,
+														slidesToScroll: 1
+													  }
 													}
-												  },
-												  {
-													breakpoint: 600,
-													settings: {
-													  slidesToShow: 1,
-													  slidesToScroll: 1
-													}
-												  }
-												]
+												  ]
+												});
+											   
+										
+											  
+												}
+												
 											  });
-											});
+
+										
+										});
+
+
 										  </script>
+
+									
 										  
 									  </section>
-									  						
+									 						
 							
 							<script src=
 "https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
@@ -451,6 +499,17 @@ href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.c
 					speed: 10,
 					bg : "#008080"
 				});
-			});</script>
+
+				
+			});
+			
+			
+			$(document).ready(function () {
+												
+										
+											 
+										  
+  
+										  </script>
 	</body>
 </html>
