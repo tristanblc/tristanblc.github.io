@@ -58,13 +58,7 @@ table {
 	margin-left: 25px;
 }
 
-.vertical-center {
-	margin: 0;
-	position: absolute;
-	top: 50%;
-	-ms-transform: translateY(-50%);
-	transform: translateY(-50%);
-  }
+
 
 body {
 	-webkit-text-size-adjust: none;
@@ -112,8 +106,6 @@ input, select, textarea {
 
 	html {
 		box-sizing: border-box;
-		background-image: url("images/mer.png");
-		background-repeat: no-repeat;
 	}
 
 	*, *:before, *:after {
