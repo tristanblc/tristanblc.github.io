@@ -357,15 +357,8 @@
                       method: "GET",
                       dataType: "json",
                        success: function(resultat) {
-
-                        
-                                    const jsonProject = JSON.parse(JSON.stringify(resultat))
-                                    for(var i = 0;i < resultat.length;i++){
-                                       console.log(jsonProject[i])
-                                       $('div[id="'+json.name+'"]').append('<a href="'+jsonProject[i].zipball_url+'" class="btn btn-primary" style="margin-right">Télécharger le projet 📲</a>');
-                                    }
-                                   
-
+                                    const jsonProject = JSON.parse(JSON.stringify(resultat))	       	   
+                                    $('div[id="'+json.name+'"]').append('<a href="'+jsonProject[0].zipball_url+'" class="btn btn-primary" style="margin-right">Télécharger le projet 📲</a>');
                        }
                     });;
                 
