@@ -234,7 +234,6 @@
 
         <div class="row">
           <div class="col-lg-6" data-aos="fade-up">
-            <h3 class="resume-item">Mes experiences professionnels : </h3>
             <h3 class="resume-title">Mes diplomes :</h3>
             <div class="resume-item">
               <h4>POEC Dotnet DevOps</h4>
@@ -343,9 +342,6 @@
                 method: "GET",
                 dataType: "json",
                 success: function(res) {
-                  
-                   
-              
                   for(var i = 0;i < res.length;i++){
                     const json = JSON.parse(JSON.stringify(res[i]))
                     if(json.description == null){
@@ -353,15 +349,14 @@
                     }         
 
                   
-                    $('#test').append('  <div class="swiper-slide"><div class="card" data-aos="fade-up" data-aos-delay="300" style="width: 25rem;"> <img src="/assets/img/projets.jpg"  class="card-img-top" alt="..." style="width: 15rem;margin-left: auto;margin-right: auto;"><div class="card-body" id="'+json.name+'" style="margin-right: auto;margin-left: auto;"><h5 class="card-title">'+json.name+'</h5><em>'+json.description+'</em></p><a href="'+json.svn_url+'" class="btn btn-primary">Lien sur github 🌐</a></div></div></div>'); 
-                   
-                 
-                 
+                    $('#test').append('  <div class="swiper-slide m-5 pb-5"><div class="card " data-aos="fade-up" data-aos-delay="300" style="width: 25rem;"> <img src="/assets/img/projets.jpg"  class="card-img-top" alt="..." style="width: 15rem;margin-left: auto;margin-right: auto;"><div class="card-body" id="'+json.name+'" style="margin-right: auto;margin-left: auto;"><h5 class="card-title">'+json.name+'</h5><em>'+json.description+'</em></p><a href="'+json.svn_url+'" class="btn btn-primary">Lien sur github 🌐</a></div></div></div>'); 
+                  
                       $.ajax({
                       url : "https://api.github.com/repos/"+json.full_name+"/tags",
                       method: "GET",
                       dataType: "json",
                        success: function(resultat) {
+                                    console.log(JSON.stringify(resultat));
                                     const jsonProject = JSON.parse(JSON.stringify(resultat))	       	   
                                     $('div[id="'+json.name+'"]').append('<a href="'+jsonProject[0].zipball_url+'" class="btn btn-primary" style="margin-right">Télécharger le projet 📲</a>');
                        }
