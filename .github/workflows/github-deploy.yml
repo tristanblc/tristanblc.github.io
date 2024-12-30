@@ -18,11 +18,12 @@ jobs:
     - name: Build
       run: |
         npm install
+        npm install process
         npm run-script build
       env:
         EMAIL_JS_API_KEY: ${{ secrets.EMAIL_JS_API_KEY }}
         TEMPLATE_KEY: ${{ secrets.TEMPLATE_KEY }}
-        SERVICE_KEY: ${{ secrets.SERVICE_KEY }}
+        SERVICE_KEY: ${{ secrets.SERVICE_KEY }}cd 
 
     - name: Deploy
       uses: JamesIves/github-pages-deploy-action@releases/v3

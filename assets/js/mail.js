@@ -1,5 +1,5 @@
-
-    window.onload = function() {
+require('process');
+window.onload = function() {
         document.getElementById('contact-form').addEventListener('submit', function(event) {
             event.preventDefault();
             const apiKey = process.env.EMAIL_JS_API_KEY
@@ -13,4 +13,4 @@
                       });
 
         });
-    }
+}
