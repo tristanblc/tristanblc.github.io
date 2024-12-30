@@ -1,0 +1,33 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    
+    - name: Checkout
+      uses: actions/checkout@v1
+
+    - name: Build
+      run: |
+        npm install
+        npm install process
+        npm run-script build
+      env:
+        EMAIL_JS_API_KEY: ${{ secrets.EMAIL_JS_API_KEY }}
+        TEMPLATE_KEY: ${{ secrets.TEMPLATE_KEY }}
+        SERVICE_KEY: ${{ secrets.SERVICE_KEY }}
+
+    - name: Deploy
+      uses: JamesIves/github-pages-deploy-action@releases/v3
+      with:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        BRANCH: gh-pages
+        FOLDER: build
