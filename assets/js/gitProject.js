@@ -39,7 +39,7 @@ $(document).ready(function () {
    
           string  += '          <div class="card-body" id="card'+json.name+'_2">'; 
           string += ' <h5 class="card-title"> Langages de programmation : </h5>';
-          <br></br> 
+          string +='<br></br>';
           $.ajax({
             url: "https://api.github.com/repos/tristanblc/"+json.name+"/languages",
             method: "GET",
