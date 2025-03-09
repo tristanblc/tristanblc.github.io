@@ -1,3 +1,8 @@
+function setCard(name, key){
+  $('#card'+name+'_2').append('<i class="devicon-'+key+'-plain" font-size="auto"></i>');
+}
+
+
 $(document).ready(function () {
 
     var resultat = [];
@@ -46,11 +51,53 @@ $(document).ready(function () {
             dataType: "json",
             success: function(res) {
               
-              const jsonProject = JSON.parse(JSON.stringify(res))	
+              const jsonProject = JSON.parse(JSON.stringify(res))	 
+
+              
               for (var key in jsonProject){
-                $('#card'+json.name+'_2').append('<p class="card-title">'+key+'</p>');
+           
+                var boolGetValue = key == null || key ==  'undefined' ? false : true;
+
+                if (boolGetValue == true)
+                {
+                  
+                  var keyValue = null;
+                  keyValue = key.toLowerCase();
+                  switch(keyValue){
+                    case 'c#':
+                       keyValue = 'csharp'
+                       setCard(json.name, keyValue)
+                       continue;
+                    case 'css':
+                       keyValue = 'css3'
+                       setCard(json.name, keyValue)
+                       continue;
+                    case 'html':
+                       keyValue = 'html5'
+                       setCard(json.name, keyValue)
+                       continue;
+                    case 'dockerfile':
+                       keyValue = 'docker'
+                       setCard(json.name, keyValue)
+                       continue;
+                    case 'shell':
+                       keyValue = 'bash'
+                       setCard(json.name, keyValue)
+                       continue;
+                    case 'twig':
+                        keyValue = 'symfony'
+                        setCard(json.name, keyValue)
+                        continue;
+                      
+                    default:
+                      keyValue = null;
+                      continue;
+                  }
+                 
+                }
                 string  += '';   
               }
+              
               
             },
             error: function (request, status, error) {
