@@ -15,10 +15,15 @@
 ----------------------------------------------------------------
 */
 
+html{
+  overflow: scroll;
+  overflow-x: hidden;
+}
 
 body {
   font-family: "Open Sans", sans-serif;
   color: #272829;
+  overflow: auto;
 }
 
 a {
@@ -1189,4 +1194,9 @@ section {
 
 [class^=devicon-], [class*=" devicon-"] {
   font-size: -webkit-xxx-large !important;
+}
+
+.alert-danger
+{
+  margin-top: 10px !important;
 }
