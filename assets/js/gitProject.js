@@ -7,8 +7,11 @@ $(document).ready(function () {
 
     var resultat = [];
 
+    var gitAccounts = ['tristanblc', 'triblanc']
+
+    gitAccounts.forEach((element) => 
     $.ajax({
-      url: "https://api.github.com/users/tristanblc/repos",
+      url: "https://api.github.com/users/"+element+"/repos",
       method: "GET",
       dataType: "json",
       success: function(res) {
@@ -159,8 +162,10 @@ $(document).ready(function () {
       
       },
       
-    );
-    
+    ) 
+  )
   
   })
+  
   ;
+
