@@ -9,7 +9,7 @@ $(document).ready(function () {
 
     var gitAccounts = ['tristanblc', 'triblanc']
 
-    gitAccounts.forEach((element) => 
+    
     $.ajax({
       url: "https://api.github.com/users/"+element+"/repos",
       method: "GET",
@@ -163,7 +163,7 @@ $(document).ready(function () {
       },
       
     ) 
-  )
+  
   
   })
   
