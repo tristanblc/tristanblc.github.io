@@ -11,7 +11,7 @@ $(document).ready(function () {
 
     
     $.ajax({
-      url: "https://api.github.com/users/"+element+"/repos",
+      url: "https://api.github.com/users/tristanblc/repos",
       method: "GET",
       dataType: "json",
       success: function(res) {
