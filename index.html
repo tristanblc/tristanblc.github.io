@@ -212,101 +212,223 @@
 
       </div>
     </section><!-- End Skills Section -->
+<!-- ======= Timeline Section with Tabs (Responsive) ======= -->
+<section id="timeline" class="py-5">
+  <div class="container">
+    <div class="section-title text-center mb-5">
+      <h2>Mon Parcours</h2>
+    </div>
 
-    <!-- ======= Resume Section ======= -->
-    <section id="resume" class="resume">
-      <div class="container">
+    <!-- Tabs -->
+    <ul class="nav nav-tabs justify-content-center mb-4" id="timelineTabs" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="diplomes-tab" data-bs-toggle="tab" data-bs-target="#diplomes" type="button" role="tab" aria-controls="diplomes" aria-selected="true">
+          Diplômes
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="experiences-tab" data-bs-toggle="tab" data-bs-target="#experiences" type="button" role="tab" aria-controls="experiences" aria-selected="false">
+          Expériences
+        </button>
+      </li>
+    </ul>
 
-        <div class="section-title d-flex align-items-center justify-content-center">
-          <h2>Diplomes et mes experiences</h2>
-        </div>
+    <!-- Tab Content -->
+    <div class="tab-content" id="timelineTabsContent">
+      
+      <!-- Diplômes Tab -->
+      <div class="tab-pane fade show active" id="diplomes" role="tabpanel" aria-labelledby="diplomes-tab">
+        <div class="timeline-wrapper position-relative">
 
-        <div class="row ">
-          <div class="col-lg-6" data-aos="fade-up">
-            <h3 class="resume-title">Mes diplomes :</h3>
-            <div class="resume-item">
-              <h4>POEC Dotnet DevOps</h4>
-              <h5>2021</h5>
-              <p>Résultat : <em>Obtenu</em> - <em>Remise à niveau en  developpement en C# (WPF/ASPNET/Azure)</em></p>             
-            </div>
-            <div class="resume-item">
-              <h4>Bac+3 Concepteur développeur d'application - 2021 - Pole la chartreuse</h4>
-              <h5>2020 - 2021</h5>
-              <p>Résultat : <em>Obtenu</em></p>
-              <p><em>Pole La chartreuse - Puy-En-Velay</em></p>
-              
-            </div>
-            <div class="resume-item">
-              <h4>BTS SIO option SLAM</h4>
-              <h5>2018 - 2020</h5>
-              <p><em>Lycée Sidoine Apollinaire - Clermont-Ferrand</em></p>
-              <p>Résultat : <em>Obtenu</em></p>
-              <p>Formation Bac+2 dans le domaine du développement informatique</p>
-            </div>
-            <div class="resume-item">
-              <h4>Baccalauréat Scientifique</h4>
-              <h5>2016 - 2018</h5>
-              <p>Résultat : <em>Obtenu</em></p>
-              <p><em>Lycée La Fayette - Clermont-Ferrand</em></p>
-              <p>Spécialité Science de l'ingénieur - Option ISN (informatique et sciences du numérique)</p>
+          <!-- Left Item -->
+          <div class="timeline-item left" data-aos="fade-right">
+            <div class="timeline-icon"><i class="bi bi-mortarboard-fill"></i></div>
+            <div class="card shadow-sm">
+              <div class="card-body">
+                <h5 class="card-title">POEC Dotnet DevOps</h5>
+                <h6 class="card-subtitle mb-2 text-muted">2021</h6>
+                <p class="card-text"><em>Obtenu</em> – Remise à niveau en C# (WPF / ASP.NET / Azure)</p>
+              </div>
             </div>
           </div>
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <h3 class="resume-title">Expériences professionnelles :</h3>
-            <div class="resume-item">
-              <h4>Gestionnaire d'application - Université Clermont Auvergne</h4>
-              <h5> Depuis Decembre 2024</h5> 
-              <h5>Fonctionnaire</h5>
-              <p><em>Clermont-Ferrand, France</em></p>                            
-            </div>
-            <div class="resume-item">
-              <h4>Gestionnaire d'application - Université Clermont Auvergne</h4>
-              <h5> Mars 2023 - Decembre 2024</h5>  
-              <h5>CDD</h5>
-              <p><em>Clermont-Ferrand, France</em></p>                           
-            </div>
-            <div class="resume-item">
-              <h4>Stagiaire DSI - Crous Clermont Auvergne</h4>
-              <h5>2021</h5> <h5>Stage</h5>
-              <p><em>Clermont-Ferrand, France</em></p>
-              <p>Stage de 8 semaines</p>
-              <ul>
-                <li><em>
-                  Sujet :
-                  Ce stage était basé sur le développement d'un outil de gestion de droits pour l'ensemble des applications métiers et des outils ou accès du Crous.</em></li>
-                  <li><em>Technologies: Symfony/PHP/JS</em></li>
-              </ul>
-            </div>
-            <div class="resume-item">
-              <h4>Stagiaire  - Conseil départementale du Puy-De-Dome</h4>
-              <h5>2020</h5> <h5>Stage</h5>
-              <p><em>Clermont-Ferrand, France</em></p>
-              <p>Stage de 6 semaines</p>
-              <ul>
-                <li><em>
-                  Sujet :
-                  Ce stage était basé sur le développement d'un Parapheur (outil de gestion des courriers afin de le faire signer par les responsables).
-                  </em></li>
-                  <li><em>Technologies: PLSQL et base de données Oracle - HTML/CSS/JS - Oracle Apex</em></li>
-              </ul>
-            </div>
-            <div class="resume-item">
-              <h4>Stagiaire - CSP</h4>
-              <h5>2019</h5> <h5>Stage</h5>
-              <p><em>Cournon d'Auvergne, France</em></p>
-              <p>Stage de 4 semaines</p>
-              <ul>
-                <li><em>
-                  Développement Python et Mise à jour d'état sur Business Objects
-                </em></li>
-                <li><em>Technologies : Python et Business Objects</em></li>
-              </ul>
+
+          <!-- Right Item -->
+          <div class="timeline-item right" data-aos="fade-left">
+            <div class="timeline-icon"><i class="bi bi-mortarboard-fill"></i></div>
+            <div class="card shadow-sm">
+              <div class="card-body">
+                <h5 class="card-title">Bac+3 Concepteur développeur d'application</h5>
+                <h6 class="card-subtitle mb-2 text-muted">2020 - 2021</h6>
+                <p class="card-text"><em>Obtenu</em> – Pôle La Chartreuse, Puy-En-Velay</p>
+              </div>
             </div>
           </div>
-        </div>
 
+          <!-- Left Item -->
+          <div class="timeline-item left" data-aos="fade-right">
+            <div class="timeline-icon"><i class="bi bi-mortarboard-fill"></i></div>
+            <div class="card shadow-sm">
+              <div class="card-body">
+                <h5 class="card-title">BTS SIO option SLAM</h5>
+                <h6 class="card-subtitle mb-2 text-muted">2018 - 2020</h6>
+                <p class="card-text"><em>Obtenu</em> – Lycée Sidoine Apollinaire, Clermont-Ferrand</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Item -->
+          <div class="timeline-item right" data-aos="fade-left">
+            <div class="timeline-icon"><i class="bi bi-mortarboard-fill"></i></div>
+            <div class="card shadow-sm">
+              <div class="card-body">
+                <h5 class="card-title">Baccalauréat Scientifique</h5>
+                <h6 class="card-subtitle mb-2 text-muted">2016 - 2018</h6>
+                <p class="card-text"><em>Obtenu</em> – Lycée La Fayette, Clermont-Ferrand</p>
+                <p class="card-text">Spécialité Science de l'ingénieur - Option ISN</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
       </div>
-    </section><!-- End Resume Section -->
+
+      <!-- Expériences Tab -->
+      <div class="tab-pane fade" id="experiences" role="tabpanel" aria-labelledby="experiences-tab">
+        <div class="timeline-wrapper position-relative">
+
+          <!-- Left Item -->
+          <div class="timeline-item left" data-aos="fade-right">
+            <div class="timeline-icon"><i class="bi bi-briefcase-fill"></i></div>
+            <div class="card shadow-sm">
+              <div class="card-body">
+                <h5 class="card-title">Gestionnaire d'application - Université Clermont Auvergne</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Depuis Décembre 2024</h6>
+                <p class="card-text">Fonctionnaire – Clermont-Ferrand, France</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Item -->
+          <div class="timeline-item right" data-aos="fade-left">
+            <div class="timeline-icon"><i class="bi bi-briefcase-fill"></i></div>
+            <div class="card shadow-sm">
+              <div class="card-body">
+                <h5 class="card-title">Gestionnaire d'application - Université Clermont Auvergne</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Mars 2023 - Décembre 2024</h6>
+                <p class="card-text">CDD – Clermont-Ferrand, France</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Left Item -->
+          <div class="timeline-item left" data-aos="fade-right">
+            <div class="timeline-icon"><i class="bi bi-briefcase-fill"></i></div>
+            <div class="card shadow-sm">
+              <div class="card-body">
+                <h5 class="card-title">Stagiaire DSI - Crous Clermont Auvergne</h5>
+                <h6 class="card-subtitle mb-2 text-muted">2021</h6>
+                <p class="card-text">Stage de 8 semaines – Clermont-Ferrand, France</p>
+                <ul>
+                  <li>Développement outil de gestion de droits</li>
+                  <li>Technologies: Symfony / PHP / JS</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Item -->
+          <div class="timeline-item right" data-aos="fade-left">
+            <div class="timeline-icon"><i class="bi bi-briefcase-fill"></i></div>
+            <div class="card shadow-sm">
+              <div class="card-body">
+                <h5 class="card-title">Stagiaire - Conseil départemental du Puy-De-Dôme</h5>
+                <h6 class="card-subtitle mb-2 text-muted">2020</h6>
+                <p class="card-text">Stage de 6 semaines – Clermont-Ferrand, France</p>
+                <ul>
+                  Développement d’un parapheur pour gestion de courriers
+                  Technologies: PLSQL / Oracle / HTML / CSS / JS / Oracle Apex
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Left Item -->
+          <div class="timeline-item left" data-aos="fade-right">
+            <div class="timeline-icon"><i class="bi bi-briefcase-fill"></i></div>
+            <div class="card shadow-sm">
+              <div class="card-body">
+                <h5 class="card-title">Stagiaire - CSP</h5>
+                <h6 class="card-subtitle mb-2 text-muted">2019</h6>
+                <p class="card-text">Stage de 4 semaines – Cournon d'Auvergne, France</p>
+                <ul>
+                  <li>Développement Python et mise à jour d'état sur Business Objects</li>
+                  <li>Technologies : Python / Business Objects</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Timeline CSS -->
+<style>
+.timeline-wrapper {
+  position: relative;
+  padding: 2rem 0;
+}
+.timeline-wrapper::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 3px;
+  background: #ddd;
+  transform: translateX(-50%);
+}
+
+.timeline-item {
+  position: relative;
+  width: 50%;
+  padding: 1rem 0;
+}
+.timeline-item.left { left: 0; }
+.timeline-item.right { left: 50%; }
+
+.timeline-item .timeline-icon {
+  position: absolute;
+  top: 20px;
+  width: 30px;
+  height: 30px;
+  background: #0d6efd;
+  color: #fff;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 30px;
+  z-index: 1;
+}
+.timeline-item.left .timeline-icon { right: -15px; }
+.timeline-item.right .timeline-icon { left: -15px; }
+
+/* Responsive: single column on mobile */
+@media (max-width: 767px) {
+  .timeline-wrapper::before { left: 15px; }
+  .timeline-item { width: 100%; padding-left: 40px; padding-right: 15px; margin-bottom: 2rem; }
+  .timeline-item.left, .timeline-item.right { left: 0; }
+  .timeline-item .timeline-icon { left: 0; right: auto; top: 0; }
+  .timeline-item .card { margin-left: 45px !important; margin-right: 0 !important; }
+}
+</style>
+
+<!-- AOS Initialization -->
+<script>
+AOS.init({ duration: 1000, once: true });
+</script>
 
     <!-- ======= Portfolio Section ======= -->
     <section id="portfolio" class="testimonials section-bg">
@@ -344,6 +466,7 @@
           </div>
            <script type="text/javascript" src="assets/js/gitProject.js"></script> 
         </div>
+        <br>
         <div class="section-title  d-flex align-items-center justify-content-center" >
           <h2>Mes projets professionnelles</h2>
         
@@ -354,45 +477,84 @@
           <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100" id="error">
             
 
-            <div class="accordion text-center" id="test">
-              <div class="accordion-item ">
-                   
-        <div class="accordion-item">
-         <h2 class="accordion-header justify-content-center" id="pscol">
-         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_pcscol" aria-expanded="false" aria-controls="collapse_pcscol">Projet de recuperation de validation d'acquis d'expérience</button>
-         </h2>
-         <div id="collapse_pcscol" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#test">
-         <div class="accordion-body">
-         <div class="container">
-         <div class="row">
-         <div class="col-sm-6">
-            <br>
-           <div class="card">
-             <div class="card-body" id="card_pcscol">
-               <h5 class="card-title"></h5>
-               <p class="card-text">Projet de conversion des PRC de Apogee en Validation d'acquis EVAL ou DISPENSE dans Pegase<p>
-               <a href="https://github.com/PC-Scol/rdd_prc_to_vac" class="card-link btn btn-primary">Lien sur github 🌐</a>
-             </div>
-             <br>
-          </div>
-         </div>
-         <div class="col-sm-6">
-         <br>
-         <div class="card">
-                  
-             <div class="card-body" id="card_pcscol_2">
-          <h5 class="card-title"> Langages de programmation : </h5>
-         <br></br>
 
-        <i class="devicon-bash-plain" font-size="auto"></i>
-        <i class="devicon-postgresql-plain" font-size="auto"></i>
-        <i  class="devicon-oracle-original font-size="auto"></i>
-             </div>
-             <br>
+
+
+        
+                   
+<div class="card my-3 shadow-sm ">
+  <div class="card-header bg-light d-flex align-items-center">
+    <img src="https://avatars.githubusercontent.com/u/185893911?v=4" 
+         alt="${repo.owner?.login || 'Auteur'}" 
+         class="rounded-circle me-3 border" 
+         style="width:45px; height:45px;">
+    <h5 class="mb-0 text-dark fw-semibold">Projet de récupération de validation d'acquis d'expérience</h5>
+  </div>
+
+  <div class="card-body p-0">
+    <div class="accordion" id="accordionPCSCol">
+      <div class="accordion-item border-0">
+        <h2 class="accordion-header" id="headingPCSCol">
+          <button class="accordion-button collapsed bg-white text-dark fw-semibold" 
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapsePCSCol"
+                  aria-expanded="false"
+                  aria-controls="collapsePCSCol">
+            Voir les détails du projet
+          </button>
+        </h2>
+
+        <div id="collapsePCSCol" 
+             class="accordion-collapse collapse" 
+             aria-labelledby="headingPCSCol" 
+             data-bs-parent="#accordionPCSCol">
+          <div class="accordion-body bg-light">
+
+            <div class="container">
+              <div class="row g-3">
+
+                <!-- 🧾 Project Information -->
+                <div class="col-md-6">
+                  <div class="card border-0 h-100">
+                    <div class="card-body" id="cardPCSCol">
+                      <h6 class="card-subtitle mb-2 text-muted">Présentation du projet</h6>
+                      <p class="card-text">
+                        Projet de conversion des PRC de Apogee en Validation d'acquis EVAL ou DISPENSE dans Pegase
+                      </p>
+                      <a href="https://github.com/PC-Scol/rdd_prc_to_vac" 
+                         target="_blank" 
+                         class="btn btn-outline-primary mt-2">
+                         🔗 Consulter sur GitHub
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- 💻 Programming Languages -->
+                <div class="col-md-6">
+                  <div class="card border-0 h-100 jus">
+                    <div class="card-body justify-content-center" id="card_pcscol_2">
+                      <h6 class="card-subtitle mb-2 text-muted">Technologies utilisées</h6>
+                      <div class="mt-2 d-flex flex-wrap gap-3">
+                        <i class="devicon-bash-plain"></i>
+                        <i class="devicon-postgresql-plain"></i>
+                        <i class="devicon-oracle-original"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
           </div>
-         </div>
-         </div>
-         
+        </div>
+      </div> <!-- end accordion-item -->
+    </div> <!-- end accordion -->
+  </div> <!-- end card-body -->
+</div> <!-- end main card -->
+
          </div>
             </div>
             </div>

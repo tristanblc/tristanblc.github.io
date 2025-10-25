@@ -1200,3 +1200,81 @@ section {
 {
   margin-top: 10px !important;
 }
+.timeline-wrapper {
+  position: relative;
+  padding: 2rem 0;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 4rem;
+}
+
+.timeline-item.left {
+  text-align: left;
+}
+
+.timeline-item.right {
+  text-align: right;
+}
+
+.timeline-item .timeline-icon {
+  position: absolute;
+  top: 0;
+  width: 50px;
+  height: 50px;
+  background: #0d6efd;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.5rem;
+  box-shadow: 0 0 0 rgba(13, 110, 253, 0.5);
+  animation: glow 2s infinite alternate;
+}
+
+.timeline-item.left .timeline-icon {
+  left: -25px;
+}
+
+.timeline-item.right .timeline-icon {
+  right: -25px;
+}
+
+@keyframes glow {
+  0% { box-shadow: 0 0 5px #0d6efd; }
+  50% { box-shadow: 0 0 15px #0d6efd; }
+  100% { box-shadow: 0 0 5px #0d6efd; }
+}
+
+/* Optional: line in center */
+.timeline-wrapper::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 4px;
+  height: 100%;
+  background: #dee2e6;
+  transform: translateX(-50%);
+  z-index: -1;
+}
+
+/* Align text to right for right side items */
+.timeline-item.right .card-body {
+  text-align: right;
+}
+
+/* Align text to left for left side items (optional, keeps left items normal) */
+.timeline-item.left .card-body {
+  text-align: left;
+}
+
+/* Responsive: mobile all left aligned */
+@media (max-width: 767px) {
+  .timeline-item .card-body {
+    text-align: left;
+  }
+}
+
