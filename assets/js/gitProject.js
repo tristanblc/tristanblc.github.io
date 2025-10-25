@@ -5,7 +5,7 @@ function setCard(projectName, iconKey) {
 }
 
 $(document).ready(function () {
-  const gitAccounts = ['tristanblc'];
+  const gitAccounts = ['tristanblc','triblanc'];
   const repoCache = [];
   const $testContainer = $('#test');
 
