@@ -5,7 +5,7 @@ function setCard(projectName, iconKey) {
 }
 
 $(document).ready(function () {
-  const gitAccounts = ['tristanblc', 'triblanc'];
+  const gitAccounts = ['tristanblc'];
   const repoCache = [];
   const $testContainer = $('#test');
 
@@ -105,7 +105,7 @@ function createProjectCard(repo) {
   `;
 }
 
-
+ 
   // Fetch all repos for one user
   function fetchRepos(username) {
     $.ajax({
