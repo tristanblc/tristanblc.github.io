@@ -68,9 +68,9 @@
 
       <nav id="navbar" class="nav-menu navbar">
         <ul>
-          <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i></a></li>
+          <li><a href="#hero" class="contact-badge linkedin-badge scrollto active"><i class="bx bx-home"></i></a></li>
           <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i></a></li>
-          <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span></a></li>
+          <li><a href="#skills" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span></a></li>
           <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i></a></li>
           <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> </a></li>
         </ul>
@@ -94,56 +94,85 @@
     <!-- ======= About Section ======= -->
     <div class="">
     <section id="about" class="about ">
-      <div class="container ">
+      <!-- ======= About Section as Magical Card ======= -->
+<section id="about" class="about py-5 position-relative bg-light">
+  <div class="container">
 
-        <div class="section-title  d-flex align-items-center justify-content-center" >
-          <h2>Présentation</h2>
-        
-        </div>
+    <div class="about-card p-5 text-center shadow-lg rounded position-relative overflow-hidden">
 
-        <div class="row  d-flex align-items-center justify-content-center">
-          <div data-aos="fade-right">
-          </div>
-          <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
-            <p class="fst-italic">
-              Je vis actuellement sur Clermont-Ferrand (France)
-            </p>
-            <p class="fst-italic">
-              Fan de judo 🥋 et musculation🏋️
-            </p>
-            <p class="fst-italic">
-              Je joue de temps en temps 🕹️
-            </p>
-            <p class="fst-italic">
-              Adore les documentaires et me promener dans la nature 
-            </p>
-            <div class="row">
-              <div class="col-lg-6">
-                <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span id ="year">
-                    <script>
-                    const d = new Date();
-                    var year = d.getFullYear() - 2000
-                    document.getElementById("year").innerHTML = year + ' ans'
-                    
-                    </script></li>          
-                              
-                </ul>
-              </div>
-            
-            </div>
-            <div class="col-lg-6">
-              <p>
-                N'hésitez pas à jeter un coup d'oeil à mon CV !😎
-              </p>
-                                 
-            </div>
-          </div>
-           
-          </div>
-        </div>
-
+      <!-- Section Title -->
+      <div class="section-title mb-4">
+        <h2>Présentation</h2>
       </div>
+
+      <!-- Personal Info -->
+           <!-- Additional Info -->
+<div class="row justify-content-center mt-4">
+  <div class="col-auto">
+    <div class="info-badge">
+      <span>🎂 Age:</span> <strong id="year"></strong>
+    </div>
+  </div>
+  <div class="col-auto">
+    <div class="info-badge">
+      <span>📍 Localisation:</span> <strong>Clermont-Ferrand</strong>
+    </div>
+  </div>
+  <div class="col-auto">
+    <div class="info-badge">
+      <span>💼 Profession:</span> <strong> Développeur</strong>
+    </div>
+  </div>
+</div>
+<br>
+<p class="mt-2">Hobbies</p>
+      <br>
+      <!-- Hobbies as emoji bubbles -->
+      <div class="row justify-content-center mb-4">
+        <div class="col-4 col-sm-2 text-center hobby-bubble">
+          <div class="bubble">🥋</div>
+          <p class="mt-2">Judo</p>
+        </div>
+
+        <div class="col-4 col-sm-2 text-center hobby-bubble">
+          <div class="bubble">🏋️</div>
+          <p class="mt-2">Musculation</p>
+        </div>
+
+        <div class="col-4 col-sm-2 text-center hobby-bubble">
+          <div class="bubble">🕹️</div>
+          <p class="mt-2">Jeux vidéo</p>
+        </div>
+
+        <div class="col-4 col-sm-2 text-center hobby-bubble">
+          <div class="bubble">🎬</div>
+          <p class="mt-2">Documentaires</p>
+        </div>
+
+        <div class="col-4 col-sm-2 text-center hobby-bubble">
+          <div class="bubble">🌳</div>
+          <p class="mt-2">Promenade en Nature</p>
+        </div>
+      </div>
+
+
+
+
+    </div>
+  </div>
+
+</section>
+
+
+<script>
+  // Dynamic age calculation
+  const d = new Date();
+  const age = d.getFullYear() - 2000; // replace 2000 with your birth year
+  document.getElementById("year").innerText = age + " ans";
+</script>
+
+
+
     </section><!-- End About Section -->
     <section id="skills" class="skills section-bg  d-flex align-items-center justify-content-center">
       <div class="container">
@@ -156,38 +185,96 @@
 
       <div class="justify-content-center" data-aos="fade-up" data-aos-delay="100">
 
-        
-        <img style="width: 100px;padding-left: 1px ;" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-plain-wordmark.svg" />
-        
-        <img style="width: 100px;padding-left: 1px ;" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-plain-wordmark.svg" />
-      
-        <img style="width: 100px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-line.svg" />
-      
-        <img style="width: 100px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg" />
-        
-        <img  style="width: 100px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bash/bash-plain.svg" />
-        
-        <img   style="width: 100px;"  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-plain-wordmark.svg" />
-      
-        
-        <img style="width: 100px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/oracle/oracle-original.svg" />
-      
-        
-        <img  style="width: 100px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-plain-wordmark.svg" />
-      
-        
-        <img  style="width: 100px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-plain-wordmark.svg" />
-      
-        
-        <img style="width: 100px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" />
-      
-        
-        <img style="width: 100px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-plain.svg" />
-      
-        <img style="width: 100px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original-wordmark.svg" />
+        <div class="container my-5">
+  <div class="row justify-content-center g-4" data-aos="fade-up" data-aos-delay="100">
 
-      <BR>
-        <br>
+    <!-- Skill Bubble -->
+    <div class="col-4 col-sm-2 text-center skill-bubble">
+      <div class="bubble">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-plain-wordmark.svg" alt="Python">
+      </div>
+      <p class="mt-2">Python</p>
+    </div>
+
+    <div class="col-4 col-sm-2 text-center skill-bubble">
+      <div class="bubble">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-plain-wordmark.svg" alt="HTML5">
+      </div>
+      <p class="mt-2">HTML5</p>
+    </div>
+
+    <div class="col-4 col-sm-2 text-center skill-bubble">
+      <div class="bubble">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-line.svg" alt="C#">
+      </div>
+      <p class="mt-2">C#</p>
+    </div>
+
+    <div class="col-4 col-sm-2 text-center skill-bubble">
+      <div class="bubble">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg" alt="PHP">
+      </div>
+      <p class="mt-2">PHP</p>
+    </div>
+
+    <div class="col-4 col-sm-2 text-center skill-bubble">
+      <div class="bubble">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bash/bash-plain.svg" alt="Bash">
+      </div>
+      <p class="mt-2">Bash</p>
+    </div>
+
+    <div class="col-4 col-sm-2 text-center skill-bubble">
+      <div class="bubble">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-plain-wordmark.svg" alt="MySQL">
+      </div>
+      <p class="mt-2">MySQL</p>
+    </div>
+
+    <div class="col-4 col-sm-2 text-center skill-bubble">
+      <div class="bubble">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/oracle/oracle-original.svg" alt="Oracle">
+      </div>
+      <p class="mt-2">Oracle</p>
+    </div>
+
+    <div class="col-4 col-sm-2 text-center skill-bubble">
+      <div class="bubble">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-plain-wordmark.svg" alt="PostgreSQL">
+      </div>
+      <p class="mt-2">PostgreSQL</p>
+    </div>
+
+    <div class="col-4 col-sm-2 text-center skill-bubble">
+      <div class="bubble">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-plain-wordmark.svg" alt="Docker">
+      </div>
+      <p class="mt-2">Docker</p>
+    </div>
+
+    <div class="col-4 col-sm-2 text-center skill-bubble">
+      <div class="bubble">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" alt="GitHub">
+      </div>
+      <p class="mt-2">GitHub</p>
+    </div>
+
+    <div class="col-4 col-sm-2 text-center skill-bubble">
+      <div class="bubble">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-plain.svg" alt="JavaScript">
+      </div>
+      <p class="mt-2">JavaScript</p>
+    </div>
+
+    <div class="col-4 col-sm-2 text-center skill-bubble">
+      <div class="bubble">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original-wordmark.svg" alt="VS Code">
+      </div>
+      <p class="mt-2">VS Code</p>
+    </div>
+
+  </div>
+</div>
 
     </div>
     <br>
@@ -199,19 +286,57 @@
       
       <div class="calendar">
       
-        <!-- Loading stuff -->
-        Loading the data just for you.
-        </div>
+        <div class="container my-5">
+  <section class="github-dashboard py-5 bg-light">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-8">
+        <div class="">
+          <!-- Section Header -->
+          <div class="text-center mb-4">
+            <h3 class="fw-bold">Activité GitHub</h3>
+            <p class="text-muted mb-0">Suivez mon activité GitHub au fil du temps</p>
+          </div>
+
+          <!-- Calendar -->
+          <div class="calendar"></div>
+          <br>
         
-        <script>
-        GitHubCalendar(".calendar", "tristanblc", { responsive: true });
-        </script>
-       
-    </section>
-    
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</section>
+
+<!-- GitHub Calendar JS & CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-calendar@latest/dist/github-calendar-responsive.css"/>
+<script src="https://cdn.jsdelivr.net/npm/github-calendar@latest/dist/github-calendar.min.js"></script>
+
+<script>
+  GitHubCalendar(".calendar", "tristanblc", {
+    responsive: true,
+    tooltips: true,
+    global_stats: false
+  });
+</script>
+
 
       </div>
+      
     </section><!-- End Skills Section -->
+ <section class="holopin-card-huge ">
+  <a href="https://holopin.io/@tristanblc" target="_blank">
+    <img src="https://holopin.me/tristanblc" alt="@tristanblc’s Holopin board" />
+  </a>
+  <div class="holopin-card-body-huge">
+    <a href="https://holopin.io/@tristanblc" target="_blank">Mes récompenses Holopins</a>
+  </div>
+</section>
+
+
+
 <!-- ======= Timeline Section with Tabs (Responsive) ======= -->
 <section id="timeline" class="py-5">
   <div class="container">
@@ -375,56 +500,6 @@
   </div>
 </section>
 
-<!-- Timeline CSS -->
-<style>
-.timeline-wrapper {
-  position: relative;
-  padding: 2rem 0;
-}
-.timeline-wrapper::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 50%;
-  width: 3px;
-  background: #ddd;
-  transform: translateX(-50%);
-}
-
-.timeline-item {
-  position: relative;
-  width: 50%;
-  padding: 1rem 0;
-}
-.timeline-item.left { left: 0; }
-.timeline-item.right { left: 50%; }
-
-.timeline-item .timeline-icon {
-  position: absolute;
-  top: 20px;
-  width: 30px;
-  height: 30px;
-  background: #0d6efd;
-  color: #fff;
-  border-radius: 50%;
-  text-align: center;
-  line-height: 30px;
-  z-index: 1;
-}
-.timeline-item.left .timeline-icon { right: -15px; }
-.timeline-item.right .timeline-icon { left: -15px; }
-
-/* Responsive: single column on mobile */
-@media (max-width: 767px) {
-  .timeline-wrapper::before { left: 15px; }
-  .timeline-item { width: 100%; padding-left: 40px; padding-right: 15px; margin-bottom: 2rem; }
-  .timeline-item.left, .timeline-item.right { left: 0; }
-  .timeline-item .timeline-icon { left: 0; right: auto; top: 0; }
-  .timeline-item .card { margin-left: 45px !important; margin-right: 0 !important; }
-}
-</style>
-
 <!-- AOS Initialization -->
 <script>
 AOS.init({ duration: 1000, once: true });
@@ -575,47 +650,47 @@ AOS.init({ duration: 1000, once: true });
            <script type="text/javascript" src="assets/js/gitProject.js"></script> 
         </div>
     </section><!-- End Portfolio Section -->
-  
+
 
     <!-- ======= Contact Section ======= -->
-    <section id="contact" class="contact">
-      <div class="container">
+<section id="contact" class="contact py-5 bg-light">
+  <div class="container text-center">
 
-        <div class="section-title  d-flex align-items-center justify-content-center" >
-          <h2>Contact</h2>
-        
-        </div>
-       
+    <!-- Section Title -->
+    <div class="section-title mb-4">
+      <h2>Contact</h2>
+      <p class="fst-italic"><em>Vous pouvez me contacter par le biais de ces réseaux sociaux ou par mail</em></p>
+    </div>
 
-        <div class="section-title ">
-          
-          <p class="d-flex align-items-center justify-content-center"><em> Vous pouvez me contacter par le biais de ces réseaux sociaux ou par mail</em></p>
-          
-        </div>
+    <!-- Contact Badges -->
+    <div class="d-flex flex-wrap justify-content-center gap-3 mt-4">
 
-        <div class="row" data-aos="fade-in">
+      <!-- Email Badge -->
+      <a href="mailto:tblanc.sio@gmail.com" class="contact-badge email-badge">
+        📧 tblanc.sio@gmail.com
+      </a>
 
-          <div class="d-flex align-items-center justify-content-center">
-            <div class="info">
-              <div>
-                <h4 class=" d-flex align-items-center justify-content-center"><i class="bi bi-envelope email" style="margin-right: 10px;"></i>  tblanc.sio@gmail.com </h4>
-              </div>
-            
-              <div >
-                <br>
-                <div class="d-flex align-items-center justify-content-center">
+      <!-- Twitter Badge -->
+      <a href="https://twitter.com/tristanblc_" target="_blank" class="contact-badge twitter-badge">
+        🐦 X
+      </a>
 
-                  <a href="https://twitter.com/tristanblc_" class="twitter email" style="padding-right: 10px;"><i class="bx bxl-twitter"></i></a>
-                  <a href="https://github.com/tristanblc" class="github email" style="padding-right: 10px;"><i class="bx bxl-instagram"></i></a>
-                  <a href="https://fr.linkedin.com/profile/tristanblanc" class="linkedin email" style="padding-right: 10px;"><i class="bx bxl-linkedin"></i></a>
-                </div>
-          
-              </div>
-            </div>
-            </div>
-            
+      <!-- GitHub Badge -->
+      <a href="https://github.com/tristanblc" target="_blank" class="contact-badge github-badge">
+        🐙 GitHub
+      </a>
 
-        </div>
+      <!-- LinkedIn Badge -->
+      <a href="https://fr.linkedin.com/profile/tristanblanc" target="_blank" class="contact-badge linkedin-badge">
+        💼 LinkedIn
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
 
       </div>
     </section>
