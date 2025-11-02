@@ -4,7 +4,10 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
+  <audio id="myAudio" hidden>
+        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+  </audio>
   <title>Portefolio - Blanc Tristan</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
@@ -59,14 +62,14 @@
 
   <!-- ======= Mobile nav toggle button ======= -->
   <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
-
+  
   <!-- ======= Header ======= -->
   <header id="header">
     <div class="d-flex flex-column">
 
      
 
-      <nav id="navbar" class="nav-menu navbar">
+    <nav id="navbar" class="nav-menu navbar">
         <ul>
           <li><a href="#hero" class="contact-badge linkedin-badge scrollto active"><i class="bx bx-home"></i></a></li>
           <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i></a></li>
@@ -90,7 +93,24 @@
 
   <main id="main">
 
+    <div id="volume" class="card text-center" style="width: 18rem; margin: 50px auto;">
+    <div class="card-body">
+      <h5 class="card-title">Contrôle du Volume</h5>
+      <button id="lowerVolumeBtn" class="btn btn-primary mb-2">Baisser le Volume</button><br>
+      <button id="raiseVolumeBtn" class="btn btn-primary">Monter le Volume</button>
+      <button id="pauseBtn" class="btn btn-primary">Stop</button>
+    </div>
+  </div>
+    <div id="boule">
+      <img src="https://media.tenor.com/C8_Y8Bx9siAAAAAi/disco-mirror-ball-djrobe.gif" >
 
+    </div>
+    <div id="cat" class="justify-content-center">
+      
+      <img src="https://media.tenor.com/EzoZD1g3WHQAAAAi/u-i-a-cat.gif" alt="Keyboard Cat" style="mix-blend-mode: multiply; background: transparent;">
+      <img src="https://media.tenor.com/CliO9z1BM2wAAAAi/bongo-cat-gif-transparent.gif">
+      <img src="https://media.tenor.com/39c7_ZNzC4MAAAAi/silly-cat-silly.gif">
+    </div>
     <!-- ======= About Section ======= -->
     <div class="">
     <section id="about" class="about ">
@@ -694,9 +714,12 @@ AOS.init({ duration: 1000, once: true });
 
       </div>
     </section>
+     <canvas id="confetti"></canvas>
   </main><!-- End #main -->
 
+  
   <!-- Vendor JS Files -->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -709,6 +732,10 @@ AOS.init({ duration: 1000, once: true });
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-
+    <script src="assets/js/easterEgg.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  <script src="assets/js/party.js"></script>
+   
 </body>
+
 </html>
